@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*Estilo header igual para todas las hojas*/
+
+header {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+@media (min-width:768px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+
+    
+
+
+/*Estilo header igual para todas las hojas*/
+
+
+/*Comienzo estilo INDEX*/
+.portada-bodega {
+    background-image: url(../img/inicio\ 1.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-bodega h3 {
+    background-color: rgba(199, 21, 134, 0.316);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+
+.portada-bodega span {
+    font-size: 3rem;
+}
+
+
+
+.nuestro-lugar h2 {
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.parrafo-nuestrolugar{
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+
+.image-uno a{
+    
+    background-color:rgba(199, 21, 134, 0.816);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 2rem; 
+}
+
+.image-uno{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    line-height: 625px;   
+}
+
+
+
+
+@media(min-width:768px){
+    .image-uno{
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: repeat(2,1fr);  
+    }
+}
+
+@media(min-width: 1200px){
+    .image-uno{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+}
+
+.contenido-imagen1{
+    background-image: url(../img/ver\ galeria\ 1.jpg);
+    padding: 8px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+
+.contenido-imagen2{
+    background-image: url(../img/ver\ galeria\ 2.jpg);
+    padding: 8px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+
+}
+
+.contenido-imagen3{
+    background-image: url(../img/ver\ galeria\ 3.jpg);
+    padding: 8px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+
+
+
+
+
+.nuestros-enologos h2{
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+}
+
+.tarjeta-enologos{
+    
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+      
+}
+
+.cuerpo-tarjeta-enologos{
+    background-color:rgba(199, 21, 134, 0.816) ;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.carousel-tarjeta-enologos{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+@media(min-width:768px){
+    .carousel-tarjeta-enologos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+}
+
+
+
+
+    
+.actividades h2{
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+.grilla-actividades{
+    
+    padding: 10px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.actividad{
+    
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    width: 250px;
+    height: 250px;
+    
+        
+    
+}
+
+.actividad a{
+    background-color: rgba(199, 21, 134, 0.816);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: black;
+    
+}
+
+@media (min-width:768px){
+    .grilla-actividades{
+        display: grid;
+        grid-template-columns: repeat(3,250px);
+    }
+}
+
+@media (min-width:1200px){
+    .grilla-actividades{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.grilla-actividades article:nth-child(1){
+    background-image: url(../img/recorrida.jpg);
+}
+
+.grilla-actividades article:nth-child(2){
+    background-image: url(../img/visita\ guiada.jpg);
+}
+
+.grilla-actividades article:nth-child(3){
+    background-image: url(../img/experiencias\ unicas.jpg);
+}
+
+.grilla-actividades article:nth-child(4){
+    background-image: url(../img/trabaja\ con\ nos.jpg);
+}
+
+.grilla-actividades article:nth-child(5){
+    background-image: url(../img/estudiar.jpg);
+}
+
+
+
+.grid-container{
+    margin-top: 100px;
+background-color:rgb(26, 26, 26);
+
+color: white;
+height: 300px;
+
+
+
+display: grid;
+grid-template-columns: repeat(3,1fr)
+;
+grid-template-rows: repeat(2, 1fr) 45px;
+
+}
+
+.caja-titulo{
+    font-size: 1.7rem;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-ubicacion{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+ 
+}
+
+
+
+
+.caja-instagram, .caja-twitter, .caja-facebook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/*fin estilo INDEX*/
+
+
+/*Comienzo estilo TIENDA*/
+.productos-tienda h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+}
+
+.tarjeta {
+    border: solid 2px;
+    width: 230px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-basis:300px ;
+    flex-shrink:0 ;
+}
+
+.cuerpo-tarjeta {
+    border-top: solid 2px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.carousel-tarjeta {
+    display: flex;
+    overflow:auto;
+}
+
+/*Fin estilo TIENDA*/
+
+/* Comienzo estilo VIÑEDOS*/
+
+
+
+.portada-vinedo p{
+    padding: 20px;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.tarjeta-ubicacion{
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-ubicacion{
+    display: flex;
+    padding: 100px;
+    gap: 40px;
+}
+
+.cuerpo-tarjeta-ubicacion{
+    padding: 30px;
+    display: flex;
+    
+    
+}
+
+
+/* Fin estilo VIÑEDOS*/
+
+
+/* Comienzo estilo BODEGA*/
+
+.portada-hoja-bodega h2{
+    padding: 50px;
+    text-align: center;
+}
+
+.portada-bodega-texto{
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-bodega{
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.bodega-informacion h2{
+    padding: 20px;
+    margin-bottom: 40px;
+text-align: center;
+
+}
+
+.bodega-informacion{
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    
+}
+
+.carousel-bodega-imagenes{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (min-width:768px){
+    .carousel-bodega-imagenes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+
+@media (min-width:1200px){
+    .carousel-bodega-imagenes{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+}
+
+@media (min-width:768px){
+    iframe{
+        width: 860px;
+        height: 515px;
+    }
+}
+
+/* Fin estilo BODEGA*/
+
+
+/* Comienzo estilo COTACTO */
+
+.contacto{
+    background-position: center;
+    
+    
+
+}
+
+.contacto-info label{
+    text-align: center;
+    
+}
+
+
+/*Fin estilo CONTACTO */
