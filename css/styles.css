@@ -401,9 +401,9 @@ grid-template-rows: repeat(2, 1fr) 45px;
 .cuerpo-tarjeta-ubicacion{
     padding: 30px;
     display: flex;
-    
-    
 }
+
+
 
 
 /* Fin estilo VIÑEDOS*/
@@ -477,18 +477,118 @@ text-align: center;
 
 
 /* Comienzo estilo COTACTO */
-
 .contacto{
-    background-position: center;
-    
-    
-
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
-.contacto-info label{
-    text-align: center;
+.contacto-info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     
 }
 
+@media (min-width:768px){
+    .contacto{
+        display: grid;
+        grid-template-columns: repeat(1,900px);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
 
 /*Fin estilo CONTACTO */
+
+
+
+/* Comienzo estilo TIENDA */
+
+/*HEADER */
+.usuario-contraseña{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:768px){
+    .usuario-contraseña{
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+/*HEADER */
+
+
+
+/*  FOOTER  */
+.consultas{
+
+    background-color:  rgba(26, 26, 26, 0.655);
+    color: white;
+}
+
+.lista-consulta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .lista-consulta{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+}
+
+.consultas h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.lista{
+    display: flex;
+    flex-direction:column;
+    padding: 3px;
+    text-align: start;
+}
+
+@media (min-width:768px){
+  .consulta-lista{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    padding: 40px;
+    text-align:start;
+    justify-items: center;
+  }
+  }
+
+  .consultas hr{
+
+margin-left: 300px;
+margin-right: 300px;
+  }
+
+  .datafiscal{
+    background-color:rgba(26, 26, 26, 0.655) ;
+    padding: 10px;
+  }
+
+  .grid-datafiscal{
+    padding: 20px;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1px 1px 1px);
+    text-align: center;
+  }
+  
+/*  FOOTER  */
+
+/* Fin estilo TIENDA */
