@@ -12,8 +12,9 @@
 
     <header>
         <h1>Tienda</h1>
-        <nav>
-            <ul>
+        <div>
+        <nav class="menu">
+            <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./bodega.html">Bodega</a></li>
                 <li><a href="./vinedo.html">Viñedo</a></li>
@@ -21,19 +22,18 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-
-        <div>
+    </div>
+<section class="usuario-contraseña">
+        <div class="busqueda-vino">
             <label for="buscar">&#x1f50d;</label>
             <input type="search" id="buscar" placeholder="Buscar vinos">
-
-        </div>
-        <div>
             <label for="usuario">Usuario</label>
             <input type="text" id="usuario">
             <label for="contrasenia">contraseña</label>
             <input type="password" id="contrasenia">
 
         </div>
+    </section>
     </header>
 
     <main>
@@ -163,36 +163,51 @@
 
     <footer>
         <hr>
-        <section>
-            <ul>
+        <section class="consultas">
+            <ul class="consulta-lista">
+                <div class="titulo-lista">
                 <li>vinos</li>
+                <a class="lista" href="">Espumantes</a>
+                <a class="lista" href="">Tintos</a>
+                <a class="lista" href="">Especiales</a>
+            </div>
+            <div class="titulo-lista">
                 <li>lineas</li>
+                <a class="lista" href="">Dos Anas III</a>
+                <a class="lista" href="">Eve edicion especial</a>
+                <a class="lista" href="">Henderson</a>
+            </div>
+            <div class="titulo-lista">
                 <li>ayuda</li>
-                <li>preguntas</li>
-                <!--En cada li va informacion correspondiente-->
+                <a class="lista" href="">Preguntas Frecuentes</a>
+                <a class="lista" href="">Como comprar</a>
+                <a class="lista" href="">Terminos y condiciones</a>
+            </div>
             </ul>
         </section>
 
-        <section>
+        <section class="consultas">
             <hr>
             <h3>medios de pago</h3>
-            <ul>
+            <ul class="lista-consulta">
                 <li>Mercado pago</li>
                 <li>Tarjeta de credito</li>
                 <li>Efectivo</li>
                 <li>transferencia</li>
                 <!--Estos medios de pago van con simbolos correspondientes-->
             </ul>
+            <hr>
+            
         </section>
 
-        <section>
+        <section class="datafiscal">
             <hr>
-            <article>
+            <article class="grid-datafiscal">
                 <img src="../img/aichi_daiei.png" alt="imagen codigo qr">
-                <p>Data Fiscal</p>
-                <p>BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS.</p>
-                <p>Ruta Provincial 73 km 44 Partido de Tres Arroyos BsAs Argentina | ® Dos Anas Bodega Boutique 2023,
-                    todos los derechos reservados.</p>
+                
+               <p> BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS.</p>
+                Ruta Provincial 73 km 44 Partido de Tres Arroyos BsAs Argentina | ® Dos Anas Bodega Boutique 2023,
+                    todos los derechos reservados.
             </article>
         </section>
 

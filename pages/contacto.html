@@ -11,9 +11,9 @@
 <body>
     <header>
         <h1>Dos Anas</h1>
-
-        <nav>
-            <ul>
+        <div>
+        <nav class="menu">
+            <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./vinedo.html">Viñedo</a></li>
                 <li><a href="">Vinos</a></li>
@@ -22,6 +22,7 @@
 
             </ul>
         </nav>
+    </div>
     </Header>
 
     <main>
@@ -46,7 +47,7 @@
             </div>
 
             
-            <div class="contacto info">
+            <div class="contacto-info">
                 <label for="texto-usuario">ingrese su comentario:</label>
                 <textarea name="" id="texto-usuario" placeholder="Son una excelente bodega pórque..." cols="30"
                     rows="10"></textarea>
@@ -75,20 +76,27 @@
 
     <footer>
         <hr>
-        <h5>Dos Anas Bodega Boutique</h5>
-        <article>
-            <a href="https://instagram.com/dosanas.bodegaboutique?igshid=NzZlODBkYWE4Ng==" target="_blank">Instagram</a>
-            <a href="poner url">Facebook</a>
-            <a href="poner url">Twitter</a>
-        </article>
+        <section class="grid-container">
+
+            <h3 class="caja caja-titulo">Dos Anas Bodega Boutique</h3>
 
 
-        <div>
-            <!-- En esta seccion va la informacion de ubicacion geografica de la empresa y mail de contacto -->
-            <p>Ruta Provincial 73 km 44 Partido de Tres Arroyos BsAs Argentina</p>
-        </div>
+            <div class="caja caja-instagram"><a
+                href="https://instagram.com/dosanas.bodegaboutique?igshid=NzZlODBkYWE4Ng=="
+                target="_blank">Instagram</a></div>
 
 
+        <div class="caja caja-facebook"><a href="poner url">Facebook</a></div>
+
+
+        <div class="caja caja-twitter"><a href="poner url">Twitter</a></div>
+
+
+
+            <p class="caja caja-ubicacion">Ruta Provincial 73 km 44 Partido de Tres Arroyos BsAs Argentina</p>
+
+
+        </section>
 
     </footer>
 
