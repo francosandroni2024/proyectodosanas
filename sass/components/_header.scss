@@ -1,0 +1,56 @@
+
+
+/*Estilo header igual para todas las hojas*/
+
+header {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+@media (min-width:768px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*Estilo header igual para todas las hojas*/
+
+/*HEADER TIENDA */
+.usuario-contraseña{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:768px){
+    .usuario-contraseña{
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+/*HEADER TIENDA */
+
+/* APLICACION SASS A BARRA NAVEGACION (HEADER) */
+
+.link:hover{
+    color:rgba(199, 21, 134, 0.816);
+    font-size: 1.3rem;
+}
+
+/* APLICACION SASS A BARRA NAVEGACION (HEADER) */
