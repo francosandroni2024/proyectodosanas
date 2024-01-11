@@ -1,5 +1,5 @@
 /*Comienzo estilo INDEX*/
-.portada-bodega {
+.portada{
     background-image: url(../img/inicio\ 1.png);
     height: 100vh;
     background-position: center;
@@ -10,8 +10,10 @@
     align-items: center;
 }
 
-.portada-bodega h3 {
-    background-color: rgba(199, 21, 134, 0.316);
+
+
+.portada h3 {
+    background-color:$c-violeta;
     color: white;
     text-align: center;
     border-radius: 20px;
@@ -19,7 +21,7 @@
 }
 
 
-.portada-bodega span {
+.portada span {
     font-size: 3rem;
 }
 
@@ -41,7 +43,7 @@
 
 .image-uno a{
     
-    background-color:rgba(199, 21, 134, 0.816);
+    background-color:$c-violeta;
     color: white;
     padding: 15px;
     border-radius: 15px;
@@ -105,9 +107,6 @@
 }
 
 
-
-
-
 .nuestros-enologos h2{
     margin-top: 50px;
     padding: 30px;
@@ -119,20 +118,17 @@
     width: 400px;
     border-radius: 10px;
     overflow: hidden;
-    
-      
 }
 
 .cuerpo-tarjeta-enologos{
-    background-color:rgba(199, 21, 134, 0.816) ;
+    background-color:$c-violeta ;
     color: white;
     text-align: center;
     padding: 20px;
     justify-content: center;
     align-items: center;
-    
-    
 }
+
 
 .carousel-tarjeta-enologos{
     display:flex;
@@ -140,6 +136,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    
     
 }
 
@@ -187,10 +184,10 @@
 }
 
 .actividad a{
-    background-color: rgba(199, 21, 134, 0.816);
-    border-radius: 10px;
-    font-size: 1.5rem;
-    color: black;
+    background-color: $c-violeta;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
     
 }
 
@@ -234,7 +231,7 @@
 .grid-container{
     margin-top: 100px;
 background-color:rgb(26, 26, 26);
-
+background: linear-gradient(rgba(0, 0, 0, 0.792),rgba(0, 0, 0, 0.616));
 color: white;
 height: 300px;
 
@@ -501,6 +498,10 @@ margin-right: 300px;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(1px 1px 1px);
     text-align: center;
+  }
+
+  .img-datafiscal{
+    transform: translate(-20px, 80px);
   }
   
 /*  FOOTER  */
