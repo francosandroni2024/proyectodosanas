@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* CONDICIONES GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +19,8 @@ img {
   max-width: 100%;
 }
 
+/* CONDICIONES GENERALES */
+/*COMPONENTS*/
 /*Estilo header igual para todas las hojas*/
 header {
   background-color: rgb(26, 26, 26);
@@ -45,8 +48,28 @@ header nav ul {
   }
 }
 /*Estilo header igual para todas las hojas*/
+/*HEADER TIENDA */
+.usuario-contraseña {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .usuario-contraseña {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/*HEADER TIENDA */
+/* APLICACION SASS A BARRA NAVEGACION (HEADER) */
+.link:hover {
+  color: rgba(199, 21, 134, 0.816);
+  font-size: 1.3rem;
+}
+
+/* APLICACION SASS A BARRA NAVEGACION (HEADER) */
 /*Comienzo estilo INDEX*/
-.portada-bodega {
+.portada {
   background-image: url(../img/inicio\ 1.png);
   height: 100vh;
   background-position: center;
@@ -56,14 +79,14 @@ header nav ul {
   align-items: center;
 }
 
-.portada-bodega h3 {
-  background-color: rgba(199, 21, 134, 0.316);
+.portada h3 {
+  background-color: rgba(199, 21, 134, 0.816);
   color: white;
   text-align: center;
   border-radius: 20px;
 }
 
-.portada-bodega span {
+.portada span {
   font-size: 3rem;
 }
 
@@ -197,9 +220,9 @@ header nav ul {
 
 .actividad a {
   background-color: rgba(199, 21, 134, 0.816);
-  border-radius: 10px;
-  font-size: 1.5rem;
-  color: black;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
 }
 
 @media (min-width: 768px) {
@@ -238,6 +261,7 @@ header nav ul {
 .grid-container {
   margin-top: 100px;
   background-color: rgb(26, 26, 26);
+  background: linear-gradient(rgba(0, 0, 0, 0.792), rgba(0, 0, 0, 0.616));
   color: white;
   height: 300px;
   display: grid;
@@ -382,7 +406,7 @@ header nav ul {
   }
 }
 /* Fin estilo BODEGA*/
-/* Comienzo estilo COTACTO */
+/* Comienzo estilo CONTACTO */
 .contacto {
   display: flex;
   flex-direction: column;
@@ -406,19 +430,6 @@ header nav ul {
 }
 /*Fin estilo CONTACTO */
 /* Comienzo estilo TIENDA */
-/*HEADER */
-.usuario-contraseña {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .usuario-contraseña {
-    display: flex;
-    flex-direction: row;
-  }
-}
-/*HEADER */
 /*  FOOTER  */
 .consultas {
   background-color: rgba(26, 26, 26, 0.655);
@@ -480,14 +491,11 @@ header nav ul {
   text-align: center;
 }
 
-/*  FOOTER  */
-/* Fin estilo TIENDA */
-/* SASS */
-.link:hover {
-  color: rgba(199, 21, 134, 0.816);
-  font-size: 1.3rem;
+.img-datafiscal {
+  transform: translate(-20px, 80px);
 }
 
-/* SASS */
+/*  FOOTER  */
+/* Fin estilo TIENDA */
 
 /*# sourceMappingURL=styles.css.map */
