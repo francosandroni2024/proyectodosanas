@@ -21,11 +21,6 @@
 }
 
 
-.portada span {
-    font-size: 3rem;
-}
-
-
 
 .nuestro-lugar h2 {
     padding: 15px;
@@ -287,18 +282,18 @@ grid-template-rows: repeat(2, 1fr) 45px;
 
 .tarjeta {
     border: solid 2px;
-    width: 230px;
     border-radius: 10px;
+    margin-left: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    flex-basis:300px ;
-    flex-shrink:0 ;
+    flex-basis:300px;
+    flex-shrink:0;
+    
 }
 
 .cuerpo-tarjeta {
     border-top: solid 2px;
     padding: 16px;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -308,7 +303,7 @@ grid-template-rows: repeat(2, 1fr) 45px;
 
 .carousel-tarjeta {
     display: flex;
-    overflow:auto;
+    overflow: scroll;
 }
 
 /*Fin estilo TIENDA*/
