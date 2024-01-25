@@ -30,15 +30,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-header a {
-  color: white;
-}
-
 header nav ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+header a {
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -95,6 +93,7 @@ header nav ul {
 .parrafo-nuestrolugar {
   text-align: center;
   margin-bottom: 5rem;
+  padding: 100px;
 }
 
 .image-uno a {
@@ -111,6 +110,26 @@ header nav ul {
   justify-content: space-around;
   text-align: center;
   line-height: 625px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.image-uno,
+.tarjeta-enologos {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 15% cover 50%;
+  animation-fill-mode: both;
 }
 
 @media (min-width: 768px) {
@@ -161,16 +180,20 @@ header nav ul {
 }
 
 .tarjeta-enologos {
-  width: 400px;
+  width: 360px;
   border-radius: 10px;
   overflow: hidden;
+}
+.tarjeta-enologos img {
+  width: 360px;
+  height: 320px;
 }
 
 .cuerpo-tarjeta-enologos {
   background-color: rgba(199, 21, 134, 0.816);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   justify-content: center;
   align-items: center;
 }
@@ -282,7 +305,9 @@ header nav ul {
   text-align: center;
 }
 
-.caja-instagram, .caja-twitter, .caja-facebook {
+.caja-instagram,
+.caja-twitter,
+.caja-facebook {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,6 +323,7 @@ header nav ul {
 }
 
 .tarjeta {
+  background-color: white;
   border: solid 2px;
   border-radius: 10px;
   margin-left: 10px;
@@ -305,6 +331,11 @@ header nav ul {
   margin-bottom: 50px;
   flex-basis: 300px;
   flex-shrink: 0;
+  transition: 1s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.2);
 }
 
 .cuerpo-tarjeta {
@@ -324,7 +355,7 @@ header nav ul {
 /*Fin estilo TIENDA*/
 /* Comienzo estilo VIÑEDOS*/
 .portada-vinedo p {
-  padding: 20px;
+  padding: 100px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -353,7 +384,7 @@ header nav ul {
 }
 
 .portada-bodega-texto {
-  padding: 10px;
+  padding: 100px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -372,7 +403,7 @@ header nav ul {
 .bodega-informacion {
   text-align: center;
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 100px;
 }
 
 .carousel-bodega-imagenes {
@@ -381,6 +412,16 @@ header nav ul {
   padding: 20px;
   align-items: center;
   gap: 10px;
+}
+.carousel-bodega-imagenes img {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.carousel-bodega-imagenes img:hover {
+  transform: scale(1.5);
 }
 
 @media (min-width: 768px) {
@@ -427,8 +468,16 @@ header nav ul {
 /*Fin estilo CONTACTO */
 /* Comienzo estilo TIENDA */
 /*  FOOTER  */
+.suscripcion {
+  padding: 30px;
+  text-align: center;
+}
+
+.color-footer {
+  background-color: rgba(26, 26, 26, 0.797);
+}
+
 .consultas {
-  background-color: rgba(26, 26, 26, 0.655);
   color: white;
 }
 
@@ -474,23 +523,21 @@ header nav ul {
   margin-right: 300px;
 }
 
-.datafiscal {
-  background-color: rgba(26, 26, 26, 0.655);
-  padding: 10px;
+@media (min-width: 768px) {
+  .datafiscal {
+    padding: 10px;
+  }
+  .grid-datafiscal {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1px 1px 1px);
+    text-align: center;
+  }
+  .img-datafiscal {
+    transform: translate(-20px, 80px);
+  }
 }
-
-.grid-datafiscal {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1px 1px 1px);
-  text-align: center;
-}
-
-.img-datafiscal {
-  transform: translate(-20px, 80px);
-}
-
 /*  FOOTER  */
 /* Fin estilo TIENDA */
 

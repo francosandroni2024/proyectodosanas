@@ -1,71 +1,82 @@
 /*Comienzo estilo INDEX*/
-.portada{
+.portada {
     background-image: url(../img/inicio\ 1.png);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-
 .portada h3 {
-    background-color:$c-violeta;
+    background-color: $c-violeta;
     color: white;
     text-align: center;
     border-radius: 20px;
-
 }
-
-
 
 .nuestro-lugar h2 {
     padding: 15px;
     margin-bottom: 30px;
     text-align: center;
-
 }
 
-.parrafo-nuestrolugar{
+.parrafo-nuestrolugar {
     text-align: center;
     margin-bottom: 5rem;
-
+    padding: 100px;
 }
 
+.image-uno a {
 
-.image-uno a{
-    
-    background-color:$c-violeta;
+    background-color: $c-violeta;
     color: white;
     padding: 15px;
     border-radius: 15px;
-    font-size: 2rem; 
+    font-size: 2rem;
 }
 
-.image-uno{
+.image-uno {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     text-align: center;
-    line-height: 625px;   
+    line-height: 625px;
 }
 
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
 
-
-
-@media(min-width:768px){
-    .image-uno{
-        display: grid;
-        padding: 1rem;
-        grid-template-columns: repeat(2,1fr);  
+    to {
+        opacity: 1;
+        scale: 100%;
     }
 }
 
-@media(min-width: 1200px){
-    .image-uno{
+.image-uno,
+.tarjeta-enologos {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
+}
+
+@media(min-width:768px) {
+    .image-uno {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1200px) {
+    .image-uno {
         display: flex;
         flex-direction: row;
         padding: 1rem;
@@ -73,7 +84,7 @@
 
 }
 
-.contenido-imagen1{
+.contenido-imagen1 {
     background-image: url(../img/ver\ galeria\ 1.jpg);
     padding: 8px;
     border-radius: 15px;
@@ -82,17 +93,16 @@
     width: 400px;
 }
 
-.contenido-imagen2{
+.contenido-imagen2 {
     background-image: url(../img/ver\ galeria\ 2.jpg);
     padding: 8px;
     border-radius: 15px;
     background-repeat: no-repeat;
     height: 400px;
     width: 400px;
-
 }
 
-.contenido-imagen3{
+.contenido-imagen3 {
     background-image: url(../img/ver\ galeria\ 3.jpg);
     padding: 8px;
     border-radius: 15px;
@@ -102,144 +112,126 @@
 }
 
 
-.nuestros-enologos h2{
+.nuestros-enologos h2 {
     margin-top: 50px;
     padding: 30px;
     text-align: center;
 }
 
-.tarjeta-enologos{
-    
-    width: 400px;
+.tarjeta-enologos {
+    width: 360px;
     border-radius: 10px;
     overflow: hidden;
+
+    img {
+        width: 360px;
+        height: 320px;
+    }
 }
 
-.cuerpo-tarjeta-enologos{
-    background-color:$c-violeta ;
+.cuerpo-tarjeta-enologos {
+    background-color: $c-violeta ;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
 }
 
-
-.carousel-tarjeta-enologos{
-    display:flex;
+.carousel-tarjeta-enologos {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    
-    
 }
 
-@media(min-width:768px){
-    .carousel-tarjeta-enologos{
+@media(min-width:768px) {
+    .carousel-tarjeta-enologos {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
 }
 
-
-
-
-    
-.actividades h2{
+.actividades h2 {
     text-align: center;
     margin-top: 200px;
-
 }
 
-.grilla-actividades{
-    
+.grilla-actividades {
     padding: 10px;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    
 }
 
-.actividad{
-    
+.actividad {
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items:end;
+    align-items: end;
     width: 250px;
     height: 250px;
-    
-        
-    
 }
 
-.actividad a{
+.actividad a {
     background-color: $c-violeta;
     border-radius: 5px;
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
-    
 }
 
-@media (min-width:768px){
-    .grilla-actividades{
+@media (min-width:768px) {
+    .grilla-actividades {
         display: grid;
-        grid-template-columns: repeat(3,250px);
+        grid-template-columns: repeat(3, 250px);
     }
 }
 
-@media (min-width:1200px){
-    .grilla-actividades{
+@media (min-width:1200px) {
+    .grilla-actividades {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
 }
 
-.grilla-actividades article:nth-child(1){
+.grilla-actividades article:nth-child(1) {
     background-image: url(../img/recorrida.jpg);
 }
 
-.grilla-actividades article:nth-child(2){
+.grilla-actividades article:nth-child(2) {
     background-image: url(../img/visita\ guiada.jpg);
 }
 
-.grilla-actividades article:nth-child(3){
+.grilla-actividades article:nth-child(3) {
     background-image: url(../img/experiencias\ unicas.jpg);
 }
 
-.grilla-actividades article:nth-child(4){
+.grilla-actividades article:nth-child(4) {
     background-image: url(../img/trabaja\ con\ nos.jpg);
 }
 
-.grilla-actividades article:nth-child(5){
+.grilla-actividades article:nth-child(5) {
     background-image: url(../img/estudiar.jpg);
 }
 
-
-
-.grid-container{
+.grid-container {
     margin-top: 100px;
-background-color:rgb(26, 26, 26);
-background: linear-gradient(rgba(0, 0, 0, 0.792),rgba(0, 0, 0, 0.616));
-color: white;
-height: 300px;
-
-
-
-display: grid;
-grid-template-columns: repeat(3,1fr)
-;
-grid-template-rows: repeat(2, 1fr) 45px;
-
+    background-color: rgb(26, 26, 26);
+    background: linear-gradient(rgba(0, 0, 0, 0.792), rgba(0, 0, 0, 0.616));
+    color: white;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 45px;
 }
 
-.caja-titulo{
+.caja-titulo {
     font-size: 1.7rem;
     grid-column: 1/4;
     display: flex;
@@ -248,28 +240,23 @@ grid-template-rows: repeat(2, 1fr) 45px;
     align-items: center;
 }
 
-.caja-ubicacion{
+.caja-ubicacion {
     grid-column: 1/4;
     display: flex;
     flex-direction: column;
     justify-content: end;
     text-align: center;
- 
+
 }
 
-
-
-
-.caja-instagram, .caja-twitter, .caja-facebook{
+.caja-instagram,
+.caja-twitter,
+.caja-facebook {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-
-
-
 
 /*fin estilo INDEX*/
 
@@ -281,14 +268,19 @@ grid-template-rows: repeat(2, 1fr) 45px;
 }
 
 .tarjeta {
+    background-color: white;
     border: solid 2px;
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    flex-basis:300px;
-    flex-shrink:0;
-    
+    flex-basis: 300px;
+    flex-shrink: 0;
+    transition: 1s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.2);
 }
 
 .cuerpo-tarjeta {
@@ -298,7 +290,6 @@ grid-template-rows: repeat(2, 1fr) 45px;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-
 }
 
 .carousel-tarjeta {
@@ -308,27 +299,25 @@ grid-template-rows: repeat(2, 1fr) 45px;
 
 /*Fin estilo TIENDA*/
 
-
 /* Comienzo estilo VIÑEDOS*/
-
-.portada-vinedo p{
-    padding: 20px;
+.portada-vinedo p {
+    padding: 100px;
     text-align: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.tarjeta-ubicacion{
+.tarjeta-ubicacion {
     display: flex;
     justify-content: center;
 }
 
-.tarjeta-ubicacion{
+.tarjeta-ubicacion {
     display: flex;
     padding: 100px;
     gap: 40px;
 }
 
-.cuerpo-tarjeta-ubicacion{
+.cuerpo-tarjeta-ubicacion {
     padding: 30px;
     display: flex;
 }
@@ -337,63 +326,69 @@ grid-template-rows: repeat(2, 1fr) 45px;
 
 /* Comienzo estilo BODEGA*/
 
-.portada-hoja-bodega h2{
+.portada-hoja-bodega h2 {
     padding: 50px;
     text-align: center;
 }
 
-.portada-bodega-texto{
-    padding: 10px;
+.portada-bodega-texto {
+    padding: 100px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.video-bodega{
+.video-bodega {
     padding: 20px;
     text-align: center;
-    
 }
 
-.bodega-informacion h2{
+.bodega-informacion h2 {
     padding: 20px;
     margin-bottom: 40px;
-text-align: center;
-
+    text-align: center;
 }
 
-.bodega-informacion{
+.bodega-informacion {
     text-align: center;
     margin-bottom: 40px;
-    padding: 20px;
-    
+    padding: 100px;
 }
 
-.carousel-bodega-imagenes{
+.carousel-bodega-imagenes {
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: center;
     gap: 10px;
-}
 
-@media (min-width:768px){
-    .carousel-bodega-imagenes{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        
+    img {
+        width: 300px;
+        height: 200px;
+        cursor: pointer;
+        transition: 1s;
     }
 }
 
-@media (min-width:1200px){
-    .carousel-bodega-imagenes{
+.carousel-bodega-imagenes img:hover {
+    transform: scale(1.5);
+}
+
+@media (min-width:768px) {
+    .carousel-bodega-imagenes {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width:768px){
-    iframe{
+@media (min-width:1200px) {
+    .carousel-bodega-imagenes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width:768px) {
+    iframe {
         width: 860px;
         height: 515px;
     }
@@ -401,29 +396,26 @@ text-align: center;
 
 /* Fin estilo BODEGA*/
 
-
 /* Comienzo estilo CONTACTO */
-.contacto{
+.contacto {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.contacto-info{
+.contacto-info {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    
 }
 
-@media (min-width:768px){
-    .contacto{
+@media (min-width:768px) {
+    .contacto {
         display: grid;
-        grid-template-columns: repeat(1,900px);
+        grid-template-columns: repeat(1, 900px);
         text-align: center;
         align-items: center;
         justify-content: center;
-        
     }
 }
 
@@ -431,13 +423,20 @@ text-align: center;
 
 /* Comienzo estilo TIENDA */
 /*  FOOTER  */
-.consultas{
+.suscripcion {
+    padding: 30px;
+    text-align: center;
+}
 
-    background-color:  rgba(26, 26, 26, 0.655);
+.color-footer {
+    background-color: rgba(26, 26, 26, 0.797);
+}
+
+.consultas {
     color: white;
 }
 
-.lista-consulta{
+.lista-consulta {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -445,8 +444,8 @@ text-align: center;
     text-align: center;
 }
 
-@media (min-width:768px){
-    .lista-consulta{
+@media (min-width:768px) {
+    .lista-consulta {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -459,46 +458,48 @@ text-align: center;
     padding: 20px;
 }
 
-.lista{
+.lista {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     padding: 3px;
     text-align: start;
 }
 
-@media (min-width:768px){
-  .consulta-lista{
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    padding: 40px;
-    text-align:start;
-    justify-items: center;
-  }
-  }
+@media (min-width:768px) {
+    .consulta-lista {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        padding: 40px;
+        text-align: start;
+        justify-items: center;
+    }
+}
 
-  .consultas hr{
+.consultas hr {
 
-margin-left: 300px;
-margin-right: 300px;
-  }
+    margin-left: 300px;
+    margin-right: 300px;
+}
 
-  .datafiscal{
-    background-color:rgba(26, 26, 26, 0.655) ;
-    padding: 10px;
-  }
+@media (min-width:768px) {
+    .datafiscal {
+        padding: 10px;
+    }
 
-  .grid-datafiscal{
-    padding: 20px;
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1px 1px 1px);
-    text-align: center;
-  }
+    .grid-datafiscal {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1px 1px 1px);
+        text-align: center;
+    }
 
-  .img-datafiscal{
-    transform: translate(-20px, 80px);
-  }
-  
+    .img-datafiscal {
+        transform: translate(-20px, 80px);
+    }
+}
+
+
 /*  FOOTER  */
 
 /* Fin estilo TIENDA */

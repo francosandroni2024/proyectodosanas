@@ -9,18 +9,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    a {
+        color: white;
+    }
 }
 
-header a {
-    color: white;
-}
 
-header nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    
-}
 
 @media (min-width:768px){
     .menu{
